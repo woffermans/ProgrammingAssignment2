@@ -6,7 +6,7 @@
 ##                                                              ##
 ##                                                              ##
 ##                                                              ##
-##  Coursera@Offermans.Rompen.nl  07/02/2017                    ##
+##  com8@Offermans.Rompen.nl  07/02/2017                        ##
 ##                                                              ##
 ##                                                              ##
 ##**************************************************************##
@@ -14,10 +14,10 @@
 
 ## Calculating the inverse of a matrix can be computationally 
 ## demanding. Certainly more demanding than looking up the
-## inverse matrix in a table in memory (cache)
+## inverse matrix in a table in memory (cache).
 ## The following two functions enable to cache the inverse
-## matrix in memory and to calculate the inverse if the inverse
-## matrix cannot be found in cache.
+## matrix in memory and to calculate and store the inverse if 
+## the inverse matrix cannot be retrieved.
 
 ## function to create a list that can cache inverse of a matrix
 
@@ -34,8 +34,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## function to look up the inverse of a matrix in memory and to
-## calculate the inverse if it cannot be found.
+## function to look up the inverse of a matrix as well as to
+## calculate and store the inverse if it cannot be retrieved.
 
 cacheSolve <- function(x, ...) {
 	i<-x$getinverse()
